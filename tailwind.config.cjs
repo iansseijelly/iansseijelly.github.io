@@ -6,8 +6,23 @@ module.exports = {
 	},
 	plugins: [require("@tailwindcss/typography"),require("daisyui")],
 	daisyui: {
-		themes: true, // true: all themes | false: only light + dark | array: specific themes like this ["light", "dark", "cupcake"]
-		darkTheme: "dark", // name of one of the included themes for dark mode
+		themes: [
+			{
+			  mytheme: {
+				"primary": "#94e2d5",
+				"secondary": "#89dceb",
+				"accent": "#f38ba8",
+				"base-100": "#11111b",
+				"--rounded-box":   "0.3rem", // border radius rounded-box utility class, used in card and other large boxes
+				"--rounded-btn":   "0.3rem", // border radius rounded-btn utility class, used in buttons and similar element
+				"--rounded-badge": "0.3rem", // border radius rounded-badge utility class, used in badges and similar
+			  },
+			},
+			"black",
+			"cupcake",
+			"lofi",
+		  ],
+		darkTheme: "black", // name of one of the included themes for dark mode
 		logs: false, // Shows info about daisyUI version and used config in the console when building your CSS
 	  }
 }
