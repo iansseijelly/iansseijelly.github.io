@@ -11,18 +11,18 @@ const last_posts = posts.slice(0, 3);
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hello 🍉</div>
+    <div class="text-xl py-1">Hello ☕️</div>
     <div class="text-5xl font-bold">I'm Chengyi Lux Zhang</div>
-    <div class="text-3xl py-3 font-bold">Berkeley EECS PhD Student, Computer Architecture</div>
+    <div class="text-3xl py-3 font-bold">Berkeley EECS PhD, Computer Architecture</div>
     <div class="py-2">
       <text class="text-lg">
-        My research interest has two themes. <br>
-        1. Efficient and scalable micro-architecture tracing, performance profiling, and simulation methodologies. <br>
-        2. Applying these insights on hardware-software co-design of the next generation specialized SoC. 
+        Research interest: <br>
+        1. Efficient and scalable performance profiling methodologies. <br>
+        2. Novel co-simulation methodologies.
       </text>
     </div>
     <!-- <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
+      <a class="btn btn-primary" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
       <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
         Get This template
       </a>
@@ -30,33 +30,32 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-2">Project Highlights </div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="TACIT"
+    img="/tacit.jpg"
+    desc="Timing accurate core instruction trace"
+    url="https://github.com/ucb-bar/tacit_decoder"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="FireFlower"
+    img="/fireflower.jpg"
+    desc="Learning-based basic-block level performance prediction"
+    url="https://github.com/iansseijelly/FireFlower"
     badge="NEW"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="CoSMo"
+    img="/cosmo.jpg"
+    desc="An I/O Device Model for Pre-Silicon End-to-End SoC Evaluation"
+    url="https://github.com/ucb-bar/RoSE"
   />
 
-  <div>
+  <!-- <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
   </div>
 
@@ -74,5 +73,5 @@ const last_posts = posts.slice(0, 3);
         <div class="divider my-0" />
       </>
     ))
-  }
+  } -->
 </BaseLayout>

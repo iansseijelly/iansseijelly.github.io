@@ -5,47 +5,85 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title = "Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5"> Tracing and Profiling</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    title="TACIT"
+    desc="Timing accurate core instruction trace"
+    url="https://github.com/ucb-bar/tacit_decoder"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="TPGO"
+    desc="Trace-driven profile guided optimization"
+    url="https://github.com/iansseijelly/ltrace_chipyard/tree/CS265-final-project-report"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="FireFlower"
+    desc="Learning-based basic-block level performance prediction"
+    url="https://github.com/iansseijelly/FireFlower"
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Simulation and Modeling</div>
+  </div>
+
+  <HorizontalCard
+    title="CoSMo"
+    desc="A Computing and Sensing I/O Device Model for Pre-Silicon End-to-End SoC Evaluation"
+    url="https://github.com/ucb-bar/RoSE"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="RoSÉ"
+    desc="End-to-End Hardware-Mechanics Co-Simulation Infrastructure"
+    url="https://github.com/ucb-bar/RoSE"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="FireAxe"
+    desc="Scale-Up Datacenter Simulations via Multi-FPGA FireSim"
+    url="https://github.com/firesim/firesim"
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Digital Design</div>
+  </div>
+
+  <HorizontalCard
+    title="UCIe"
+    desc="A Chisel implementation of the UCIe Sideband"
+    url="#"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="RISC-V Core"
+    desc="RV32I 3-stage core with L1 I$ and D$"
     url="#"
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">CS Education</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="BaceQG"
+    desc="Boolean Algebra Circuit and Expression Question Generator"
     url="#"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Unique Variant"
+    desc="Controlled randomness question variant generation in Priarielearn"
     url="#"
   />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Pyturis"
+    desc="CS10 ProjectV Skeleton Code"
+    url="#"
+  />
+
 </BaseLayout>
