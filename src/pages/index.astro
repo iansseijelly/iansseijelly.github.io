@@ -18,7 +18,7 @@ const last_posts = posts.slice(0, 3);
       <text class="text-lg">
         Research interest: <br>
         1. Efficient and scalable performance profiling methodologies. <br>
-        2. Novel co-simulation methodologies.
+        2. Co-simulation and modeling techniques.
       </text>
     </div>
     <!-- <div class="mt-8">
@@ -35,14 +35,14 @@ const last_posts = posts.slice(0, 3);
 
   <HorizontalCard
     title="TACIT"
-    img="/tacit.jpg"
+    img={`${import.meta.env.BASE_URL}/tacit.jpg`}
     desc="Timing accurate core instruction trace"
     url="https://github.com/ucb-bar/tacit_decoder"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
     title="FireFlower"
-    img="/fireflower.jpg"
+    img={`${import.meta.env.BASE_URL}/fireflower.jpg`}
     desc="Learning-based basic-block level performance prediction"
     url="https://github.com/iansseijelly/FireFlower"
     badge="NEW"
@@ -50,7 +50,7 @@ const last_posts = posts.slice(0, 3);
   <div class="divider my-0"></div>
   <HorizontalCard
     title="CoSMo"
-    img="/cosmo.jpg"
+    img={`${import.meta.env.BASE_URL}/cosmo.jpg`}
     desc="An I/O Device Model for Pre-Silicon End-to-End SoC Evaluation"
     url="https://github.com/ucb-bar/RoSE"
   />
